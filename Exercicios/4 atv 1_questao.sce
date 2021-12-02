@@ -4,6 +4,7 @@
 // x=[0;0.5;1;1.5;2];
 //F=[0;1.1487;2.7183;4.9811;8.3890];
 //n = (b-a)/0.5;
+//a = 0, b = 2;
 clear
 clc
 a=evstr(x_dialog("Digite o valor do limite inferior da funcao:",""));
