@@ -3,7 +3,7 @@
 // Regra de Simpson;
 // Trapézio composta: (b-a)*sum(FT)/(2*n)
 // Simpson composta: (b-a)*sum(FS)/(3*n)
-//funcao exp(-x^2/2)/2*%pi^1/2
+//funcao exp(-x^2/2)/sqrt(2*%pi)
 //n = 6
 clc
 funcprot(0);//Não exibe a mensagem de redefinição da função
@@ -21,5 +21,6 @@ FS(3:2:n-1)=2*FS(3:2:n-1); // f(x) da regra de simpson
 
 ICT=(b-a)*sum(FT)/(2*n);
 ICS = (b-a)*sum(FS)/(3*n);
+IS = intg(a,b,f);
 
-disp("Regra do trapézio", ICT,"Regra de Simpson", ICS);
+disp("Regra do trapézio", ICT,"Regra de Simpson", ICS,"Scilab",IS);
